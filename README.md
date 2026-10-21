@@ -1,21 +1,27 @@
-# Next.js template
+# LZCY — Photography portfolio
 
-This is a Next.js template with shadcn/ui.
+A personal photography portfolio built on the shadcn Next.js template (preset `b5rR41Mtnc`, style `base-lyra`).
 
-## Adding components
+## Pages
 
-To add components to your app, run the following command:
+- `/` — hero image, introduction blurb, selected work (6 photographs)
+- `/about` — who I am, what and how I shoot, plus landscape / portrait / street sections
+- `/pricing` — session rates, prints, booking notes
+- `/contact` — prominent email link and a few practical answers
+
+## Development
 
 ```bash
-npx shadcn@latest add button
+pnpm install
+pnpm dev
 ```
 
-This will place the ui components in the `components` directory.
+## Replacing the placeholder images
 
-## Using components
+Every photograph on the site is a stock placeholder. All image slots are defined in **`lib/photos.ts`** — see **`PLACEHOLDER_IMAGES.md`** for the full slot inventory and instructions.
 
-To use the components in your app, import them as follows:
+## Fonts
 
-```tsx
-import { Button } from "@/components/ui/button";
-```
+- **Fraunces** (`--font-serif`) — display serif for headings; soft, slightly wonky, chosen to feel like a photo journal rather than a corporate site
+- **Inter** (`--font-sans`) — body text
+- **Geist Mono** (`--font-mono`) — small uppercase labels and metadata captions

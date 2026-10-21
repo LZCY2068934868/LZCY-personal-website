@@ -1,5 +1,20 @@
 import type { NextConfig } from "next"
 
-const nextConfig: NextConfig = {}
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/photo-**",
+      },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+        pathname: "/seed/**",
+      },
+    ],
+  },
+}
 
 export default nextConfig
