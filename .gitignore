@@ -37,3 +37,5 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.build-marker
+preview-site.bat.log
